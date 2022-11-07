@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		B430499429105AC2001DB10B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430499329105AC2001DB10B /* AppDelegate.swift */; };
 		B430499629105AC2001DB10B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430499529105AC2001DB10B /* SceneDelegate.swift */; };
-		B430499829105AC2001DB10B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430499729105AC2001DB10B /* ViewController.swift */; };
+		B430499829105AC2001DB10B /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430499729105AC2001DB10B /* IniciarSesionViewController.swift */; };
 		B430499B29105AC2001DB10B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B430499929105AC2001DB10B /* Main.storyboard */; };
 		B430499D29105AC4001DB10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B430499C29105AC4001DB10B /* Assets.xcassets */; };
 		B43049A029105AC4001DB10B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B430499E29105AC4001DB10B /* LaunchScreen.storyboard */; };
+		B43049A829105DF1001DB10B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B43049A729105DF1001DB10B /* GoogleService-Info.plist */; };
+		B45BE86729106C3200FFCD48 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B45BE86629106C3200FFCD48 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B430499029105AC2001DB10B /* MacedoSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacedoSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B430499329105AC2001DB10B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B430499529105AC2001DB10B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B430499729105AC2001DB10B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B430499729105AC2001DB10B /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		B430499A29105AC2001DB10B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B430499C29105AC4001DB10B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B430499F29105AC4001DB10B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B43049A129105AC4001DB10B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43049A729105DF1001DB10B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45BE86729106C3200FFCD48 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +62,12 @@
 			children = (
 				B430499329105AC2001DB10B /* AppDelegate.swift */,
 				B430499529105AC2001DB10B /* SceneDelegate.swift */,
-				B430499729105AC2001DB10B /* ViewController.swift */,
+				B430499729105AC2001DB10B /* IniciarSesionViewController.swift */,
 				B430499929105AC2001DB10B /* Main.storyboard */,
 				B430499C29105AC4001DB10B /* Assets.xcassets */,
 				B430499E29105AC4001DB10B /* LaunchScreen.storyboard */,
 				B43049A129105AC4001DB10B /* Info.plist */,
+				B43049A729105DF1001DB10B /* GoogleService-Info.plist */,
 			);
 			path = MacedoSnapchat;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = MacedoSnapchat;
+			packageProductDependencies = (
+				B45BE86629106C3200FFCD48 /* FirebaseAuth */,
+			);
 			productName = MacedoSnapchat;
 			productReference = B430499029105AC2001DB10B /* MacedoSnapchat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = B430498729105AC1001DB10B;
+			packageReferences = (
+				B45BE86529106C3200FFCD48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B430499129105AC2001DB10B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43049A029105AC4001DB10B /* LaunchScreen.storyboard in Resources */,
+				B43049A829105DF1001DB10B /* GoogleService-Info.plist in Resources */,
 				B430499D29105AC4001DB10B /* Assets.xcassets in Resources */,
 				B430499B29105AC2001DB10B /* Main.storyboard in Resources */,
 			);
@@ -138,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B430499829105AC2001DB10B /* ViewController.swift in Sources */,
+				B430499829105AC2001DB10B /* IniciarSesionViewController.swift in Sources */,
 				B430499429105AC2001DB10B /* AppDelegate.swift in Sources */,
 				B430499629105AC2001DB10B /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B45BE86529106C3200FFCD48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B45BE86629106C3200FFCD48 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B45BE86529106C3200FFCD48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B430498829105AC1001DB10B /* Project object */;
 }
